@@ -14,8 +14,7 @@ This program extends the Korg Volca Sample's MIDI functionality. By default the 
 * Clone the [BACH1 library](https://github.com/derdogan/bach1) to lib/bach1
 * Compile and upload to Arduino Uno (with the default IDE or PlatformIO)
 
-## Schematics
-### Parts:
+## Parts:
 * 2x MIDI connector
 * optocoupler IC, e.g. the 6N138
 * resistors
@@ -23,6 +22,7 @@ This program extends the Korg Volca Sample's MIDI functionality. By default the 
 ** 1x 480 Ohm
 ** 1x 10k Ohm
 
+## Schematics
 ### MIDI IN  -> RX (digital pin 0)
 Connect the MIDI input to an optocoupler to prevent ground loops.
 

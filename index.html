@@ -41,17 +41,17 @@
 <a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features</h2>
 
 <ul>
-<li>Play samples chromatically in a 4 octave range (MIDI channel 1-10)</li>
-<li>Play all the samples via notes on one channel from C-AS (MIDI channel 16)</li>
-<li>Pitch bend is translated to control the EG INT pitch parameter</li>
+<li>Drum mode: Play all the samples via notes on one channel from C-AS (MIDI channel 16)</li>
+<li>Synth mode: Play one sample with adjusted pitch in a 4 octave range (MIDI channel 1-10)</li>
+<li>Pitch bend works</li>
 </ul>
 
 <h2>
 <a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
 
 <ul>
-<li>Clone this repository</li>
-<li>Clone the <a href="https://github.com/derdogan/bach1">BACH1 library</a> to lib/bach1</li>
+<li>Clone/download this repository</li>
+<li>Clone/download the <a href="https://github.com/derdogan/bach1">BACH1 library</a> to lib/bach1</li>
 <li>Compile and upload to Arduino Uno (with the default IDE or PlatformIO)</li>
 </ul>
 
@@ -59,12 +59,17 @@
 <a id="parts" class="anchor" href="#parts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Parts:</h2>
 
 <ul>
-<li>2x MIDI connector</li>
-<li>optocoupler IC, e.g. the 6N138</li>
+<li>2x female MIDI jack</li>
+<li>1x diode</li>
+<li>1x optocoupler IC, e.g. the 6N138</li>
 <li>resistors
-** 2x 220 Ohm
-** 1x 480 Ohm
-** 1x 10k Ohm</li>
+
+<ul>
+<li>2x 220 Ohm</li>
+<li>1x 480 Ohm</li>
+<li>1x 10k Ohm</li>
+</ul>
+</li>
 </ul>
 
 <h2>
@@ -83,6 +88,13 @@
 <p>The output is simpler: All you need is an 220 Ohm resistor.</p>
 
 <p><img src="http://i.imgur.com/fK5Aqsk.jpg" alt="MIDI Input schematics"></p>
+
+<h2>
+<a id="todo" class="anchor" href="#todo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Todo</h2>
+
+<ul>
+<li>[ ] Polyphonic mode</li>
+</ul>
 
 <h2>
 <a id="credits" class="anchor" href="#credits" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Credits</h2>

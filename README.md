@@ -28,7 +28,7 @@ Connect the MIDI input to an optocoupler to prevent ground loops.
 
 
 ### MIDI OUT  -> TX (digital pin 1)
-The output is simpler: All you need is an 230 Ohm resistor.
+The output is simpler: All you need is an 220 Ohm resistor.
 
 ![MIDI Input schematics](http://i.imgur.com/fK5Aqsk.jpg)
 

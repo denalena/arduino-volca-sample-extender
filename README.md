@@ -7,18 +7,31 @@ This program extends the Korg Volca Sample's MIDI functionality. By default the 
 * Play all the samples via notes on one channel from C-AS (MIDI channel 16)
 * Pitch bend is translated to control the EG INT pitch parameter
 
-## Usage
+## Installation
 * Clone this repository
 * Clone the [BACH1 library](https://github.com/derdogan/bach1) in the lib/bach1
 * Compile and upload to Arduino Uno (with the default IDE or PlatformIO)
 * Hook up a MIDI I/O circuit
 
+## Schematics
+### Parts:
+* 2x MIDI connector
+* optocoupler IC, e.g. the 6N138
+* resistors
+** 2x 220 Ohm
+** 1x 480 Ohm
+** 1x 10k Ohm
+
 MIDI IN  -> RX (digital pin 0)
+Connect the MIDI input to an optocoupler to prevent ground loops.
+![MIDI Input schematics](http://i.imgur.com/Ew5b6qE.jpg)
 
-MIDI OUT -> TX (digital pin 1)
 
-Make sure to use resistors and an optocoupler. A detailed circuit can be found [on this instructables page](http://www.instructables.com/id/Send-and-Receive-MIDI-with-Arduino/?ALLSTEPS).
+MIDI OUT  -> TX (digital pin 1)
+The output is simpler: All you need is an 230 Ohm resistor.
+![MIDI Input schematics](http://i.imgur.com/fK5Aqsk.jpg)
 
 ## Credits
-Special thanks to Mauricio Maisterrena for the idea and his code.
-You can find his project here: https://github.com/mmaisterrena/Volca_Simple
+Special thanks to
+* Mauricio Maisterrena for the idea and his code. You can find his project here: https://github.com/mmaisterrena/Volca_Simple
+* amandaghassaei for the MIDI I/O schematics and [this instructables page](http://www.instructables.com/id/Send-and-Receive-MIDI-with-Arduino/?ALLSTEPS) about the Arduino and MIDI.

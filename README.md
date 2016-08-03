@@ -5,9 +5,9 @@
 This program extends the Korg Volca Sample's MIDI functionality. By default the first 10 channels control the sample slots but there is only one channel per sample and without any pitch modification. So it's pretty useless if you want to use a MIDI keyboard. There are already similar projects like this available but I wanted to make my own. Also this uses a self written MIDI library, you have been warned. 
 
 ## Features
-* Play samples chromatically in a 4 octave range (MIDI channel 1-10)
-* Play all the samples via notes on one channel from C-AS (MIDI channel 16)
-* Pitch bend is translated to control the EG INT pitch parameter
+* Drum mode: Play all the samples via notes on one channel from C-AS (MIDI channel 16)
+* Synth mode: Play one sample with adjusted pitch in a 4 octave range (MIDI channel 1-10)
+* Pitch bend works
 
 ## Installation
 * Clone/download this repository

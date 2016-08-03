@@ -1,6 +1,6 @@
 #Volca Sample Extender  
 
-This program extends the Korg Volca Sample MIDI functionality. By default the first 10 channels control the sample slots but there is only one channel per sample and without any pitch modification. So pretty useless if you only use a MIDI keyboard. There are already similar projects like this available but I wanted to make my own. Also I use a self written MIDI library, so be warned. 
+This program extends the Korg Volca Sample's MIDI functionality. By default the first 10 channels control the sample slots but there is only one channel per sample and without any pitch modification. So pretty useless if you only use a MIDI keyboard. There are already similar projects like this available but I wanted to make my own. Also I use a self written MIDI library, so be warned. 
 
 ## Features
 * Play samples chromatically in a 4 octave range (MIDI channel 1-10)

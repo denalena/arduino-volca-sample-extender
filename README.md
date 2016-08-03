@@ -10,18 +10,18 @@ This program extends the Korg Volca Sample's MIDI functionality. By default the 
 * Pitch bend is translated to control the EG INT pitch parameter
 
 ## Installation
-* Clone this repository
-* Clone the [BACH1 library](https://github.com/derdogan/bach1) to lib/bach1
+* Clone/download this repository
+* Clone/download the [BACH1 library](https://github.com/derdogan/bach1) to lib/bach1
 * Compile and upload to Arduino Uno (with the default IDE or PlatformIO)
 
 ## Parts:
 * 2x female MIDI jack
-* diode
-* optocoupler IC, e.g. the 6N138
+* 1x diode
+* 1x optocoupler IC, e.g. the 6N138
 * resistors
-** 2x 220 Ohm
-** 1x 480 Ohm
-** 1x 10k Ohm
+  * 2x 220 Ohm
+  * 1x 480 Ohm
+  * 1x 10k Ohm
 
 ## Schematics
 ### MIDI IN  -> RX (digital pin 0)
@@ -34,6 +34,9 @@ Connect the MIDI input to an optocoupler to prevent ground loops.
 The output is simpler: All you need is an 220 Ohm resistor.
 
 ![MIDI Input schematics](http://i.imgur.com/fK5Aqsk.jpg)
+
+## Todo
+- [ ] Polyphonic mode
 
 ## Credits
 Special thanks to

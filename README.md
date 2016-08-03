@@ -21,15 +21,13 @@ This program extends the Korg Volca Sample's MIDI functionality. By default the 
 ** 1x 480 Ohm
 ** 1x 10k Ohm
 
-MIDI IN  -> RX (digital pin 0)
-
+### MIDI IN  -> RX (digital pin 0)
 Connect the MIDI input to an optocoupler to prevent ground loops.
 
 ![MIDI Input schematics](http://i.imgur.com/Ew5b6qE.jpg)
 
 
-MIDI OUT  -> TX (digital pin 1)
-
+### MIDI OUT  -> TX (digital pin 1)
 The output is simpler: All you need is an 230 Ohm resistor.
 
 ![MIDI Input schematics](http://i.imgur.com/fK5Aqsk.jpg)

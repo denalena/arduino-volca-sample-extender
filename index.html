@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Volca Sample Extender by derdogan</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Volca Sample Extender</h1>
+        <p class="header">Extends the Korg Volca Sample&#39;s MIDI functionality with an Arduino Uno.</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/derdogan/volca-sample-extender/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/derdogan/volca-sample-extender/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/derdogan/volca-sample-extender">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/derdogan">derdogan</a></p>
+
+
+      </header>
+      <section>
+        <h1>
+<a id="volca-sample-extender" class="anchor" href="#volca-sample-extender" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Volca Sample Extender</h1>
+
+<p>This program extends the Korg Volca Sample's MIDI functionality. By default the first 10 channels control the sample slots but there is only one channel per sample and without any pitch modification. So it's pretty useless if you want to use a MIDI keyboard. There are already similar projects like this available but I wanted to make my own. Also I use a self written MIDI library, so be warned. </p>
+
+<h2>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features</h2>
+
+<ul>
+<li>Play samples chromatically in a 4 octave range (MIDI channel 1-10)</li>
+<li>Play all the samples via notes on one channel from C-AS (MIDI channel 16)</li>
+<li>Pitch bend is translated to control the EG INT pitch parameter</li>
+</ul>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
+
+<ul>
+<li>Clone this repository</li>
+<li>Clone the <a href="https://github.com/derdogan/bach1">BACH1 library</a> to lib/bach1</li>
+<li>Compile and upload to Arduino Uno (with the default IDE or PlatformIO)</li>
+</ul>
+
+<h2>
+<a id="schematics" class="anchor" href="#schematics" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Schematics</h2>
+
+<h3>
+<a id="parts" class="anchor" href="#parts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Parts:</h3>
+
+<ul>
+<li>2x MIDI connector</li>
+<li>optocoupler IC, e.g. the 6N138</li>
+<li>resistors
+** 2x 220 Ohm
+** 1x 480 Ohm
+** 1x 10k Ohm</li>
+</ul>
+
+<h3>
+<a id="midi-in----rx-digital-pin-0" class="anchor" href="#midi-in----rx-digital-pin-0" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>MIDI IN  -&gt; RX (digital pin 0)</h3>
+
+<p>Connect the MIDI input to an optocoupler to prevent ground loops.</p>
+
+<p><img src="http://i.imgur.com/Ew5b6qE.jpg" alt="MIDI Input schematics"></p>
+
+<h3>
+<a id="midi-out----tx-digital-pin-1" class="anchor" href="#midi-out----tx-digital-pin-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>MIDI OUT  -&gt; TX (digital pin 1)</h3>
+
+<p>The output is simpler: All you need is an 220 Ohm resistor.</p>
+
+<p><img src="http://i.imgur.com/fK5Aqsk.jpg" alt="MIDI Input schematics"></p>
+
+<h2>
+<a id="credits" class="anchor" href="#credits" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Credits</h2>
+
+<p>Special thanks to</p>
+
+<ul>
+<li>Mauricio Maisterrena for the idea and his <a href="https://github.com/mmaisterrena/Volca_Simple">code</a>.</li>
+<li>amandaghassaei for the MIDI I/O schematics and <a href="http://www.instructables.com/id/Send-and-Receive-MIDI-with-Arduino/?ALLSTEPS">this instructables page</a> about the Arduino and MIDI.</li>
+</ul>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>

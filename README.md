@@ -9,9 +9,8 @@ This program extends the Korg Volca Sample's MIDI functionality. By default the 
 
 ## Installation
 * Clone this repository
-* Clone the [BACH1 library](https://github.com/derdogan/bach1) in the lib/bach1
+* Clone the [BACH1 library](https://github.com/derdogan/bach1) to lib/bach1
 * Compile and upload to Arduino Uno (with the default IDE or PlatformIO)
-* Hook up a MIDI I/O circuit
 
 ## Schematics
 ### Parts:

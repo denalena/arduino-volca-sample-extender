@@ -15,7 +15,8 @@ This program extends the Korg Volca Sample's MIDI functionality. By default the 
 * Compile and upload to Arduino Uno (with the default IDE or PlatformIO)
 
 ## Parts:
-* 2x MIDI connector
+* 2x female MIDI jack
+* diode
 * optocoupler IC, e.g. the 6N138
 * resistors
 ** 2x 220 Ohm

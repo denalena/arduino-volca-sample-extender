@@ -34,5 +34,5 @@ The output is simpler: All you need is an 220 Ohm resistor.
 
 ## Credits
 Special thanks to
-* Mauricio Maisterrena for the idea and his code. You can find his project here: https://github.com/mmaisterrena/Volca_Simple
+* Mauricio Maisterrena for the idea and his [code](https://github.com/mmaisterrena/Volca_Simple).
 * amandaghassaei for the MIDI I/O schematics and [this instructables page](http://www.instructables.com/id/Send-and-Receive-MIDI-with-Arduino/?ALLSTEPS) about the Arduino and MIDI.
